@@ -25,8 +25,10 @@ The final dashboard is split into two main pages for a clear, story-driven analy
 1.  **Executive Summary:** A high-level overview of the business's health, focusing on key performance indicators (KPIs) and global sales trends.
 2.  **Profitability Deep Dive:** A detailed analysis page designed to uncover the root causes of profitability issues, focusing on product categories, discounts, and returns.
 
-_Include an image of your final dashboard here for the best effect._
-`[Image of the final Superstore Sales Dashboard]`
+**Here is the main dashboard view:**
+http://googleusercontent.com/image_generation_content/2
+
+
 
 ---
 
@@ -56,3 +58,47 @@ This project includes custom JSON theme files to ensure a consistent and profess
 3.  The theme will be automatically applied to your entire report.
 
 ---
+
+## 📈 Key Metrics (KPIs)
+
+The main dashboard page highlights five critical KPIs for a quick business health check:
+
+* **Total Sales:** The total revenue generated from all sales.
+* **Total Profit:** The absolute profit after all costs and discounts.
+* **Profit Ratio:** The percentage of sales that is converted into profit.
+* **Average Discount:** The average discount rate applied to all orders.
+* **Return Rate %:** The percentage of total orders that were returned by customers.
+
+---
+
+## 🔎 Visualizations and Insights
+
+### Page 1: Executive Summary
+
+* **Monthly Sales & Profit Trend:** A line chart that tracks performance over time, helping to identify seasonal trends and the overall growth trajectory.
+* **Sales by Global Market (Map):** A world map that visualizes the geographic distribution of sales, highlighting key international markets.
+
+### Page 2: Profitability Deep Dive
+
+* **Profit by Sub-Category:** A horizontal bar chart that clearly identifies the most and least profitable product categories. Unprofitable categories are highlighted in a different color for immediate attention.
+* **Returns by Sub-Category:** Complements the profit chart by showing which products are most frequently returned, helping to diagnose if losses are due to quality issues or pricing strategy.
+* **Profit vs. Discount (Scatter Plot):** A powerful scatter plot that visualizes the relationship between discounts and profitability for each sub-category, answering the question: "At what point do discounts make our products unprofitable?"
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! If you have suggestions for improving the dashboard, adding new analyses, or refining the data model, please feel free to:
+
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/YourFeatureName`).
+3.  Make your changes.
+4.  Commit your changes (`git commit -m 'Add some amazing feature'`).
+5.  Push to the branch (`git push origin feature/YourFeatureName`).
+6.  Open a Pull Request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.

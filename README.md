@@ -1,86 +1,58 @@
-# 📊 Superstore Sales Dashboard (Power BI)
+# Superstore Sales Analysis Dashboard
 
-![Power BI](https://img.shields.io/badge/PowerBI-Dashboard-orange)
-![Level](https://img.shields.io/badge/Level-Beginner-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+## Project Overview
 
----
+This project presents a comprehensive sales and profitability analysis for a global superstore. Using data from thousands of international orders, this interactive dashboard provides key insights into sales trends, product performance, market distribution, and the impact of returns and discounts. The primary goal is to identify key business drivers, pinpoint areas of unprofitability, and provide actionable data to inform strategic decisions.
 
-## 📑 Table of Contents
-
-* [Project Overview](#-project-overview)
-* [Objectives](#-objectives)
-* [Dashboard & Insights](#-dashboard--insights)
-* [Key Findings](#-key-findings)
-* [Files in Repository](#-files-in-repository)
-* [How to Use](#-how-to-use)
-* [Author](#-author)
+This repository includes the raw data, the final dashboard design, and custom theme files for easy replication and further analysis in BI tools like Power BI or Tableau.
 
 ---
 
-## 📌 Project Overview
+## 📊 Data Sources
 
-**Project Title**: Superstore Sales Dashboard  
-**Tool**: Power BI  
-[cite_start]**Source**: This project is a submission for Task 8: Simple Sales Dashboard Design for the Elevate Labs Data Analyst Internship[cite: 2, 5].
+The analysis is based on three primary CSV files:
 
-[cite_start]This project involves creating an interactive dashboard using Power BI to analyze sales and profit data from the Superstore dataset[cite: 12]. The dashboard provides key insights into performance across different markets, product categories, and over time.
-
----
-
-## 🎯 Objectives
-
-[cite_start]The main objective is to build a basic, interactive dashboard to visualize sales performance[cite: 7]. Key goals include:
-1.  [cite_start]Show sales performance by product, region, and month[cite: 7].
-2.  [cite_start]Create visuals like a line chart for sales over time, a bar chart for sales by region, and a donut/pie chart for sales by category[cite: 18, 19, 20].
-3.  [cite_start]Incorporate slicers and filters for interactivity[cite: 22].
-4.  [cite_start]Derive actionable insights from the visualizations for business users[cite: 26].
+* `Orders.csv`: Contains detailed records of each customer order, including order dates, product information, sales figures, profit, and customer details.
+* `Returns.csv`: Contains a list of all returned orders and the corresponding market.
+* `People.csv`: Maps regional managers to their respective regions.
 
 ---
 
-## 📊 Dashboard & Insights
+## 🚀 Dashboard Overview
 
-### 🔹 Dashboard Preview
-![Superstore Sales Dashboard](Screenshot%202025-10-03%20192647.png)
+The final dashboard is split into two main pages for a clear, story-driven analysis:
 
-### 🔹 Key Metrics & Visuals
--   **KPI Cards**: At-a-glance view of Total Sales ($12.64M), Total Profit ($1.47M), and Return Rate (4.69%).
--   **Date Slicer**: Allows filtering the entire dashboard for a specific date range (from 01-01-2011 to 31-12-2014).
--   **Sales by Market (Pie Chart)**: Shows the distribution of sales across different global markets.
--   **Profit and Sales by Year (Line Chart)**: Tracks the growth trend of both revenue and profit over the four-year period.
--   **Sales and Profit by Sub-Category (Bar Chart)**: Compares sales volume against profitability for each product sub-category, highlighting the most lucrative items.
+1.  **Executive Summary:** A high-level overview of the business's health, focusing on key performance indicators (KPIs) and global sales trends.
+2.  **Profitability Deep Dive:** A detailed analysis page designed to uncover the root causes of profitability issues, focusing on product categories, discounts, and returns.
+
+_Include an image of your final dashboard here for the best effect._
+`[Image of the final Superstore Sales Dashboard]`
 
 ---
 
-## 🔎 Key Findings
+## 🛠️ Installation and Usage
 
--   **Top Market**: The APAC region is the highest-performing market, contributing 28.36% ($3.59M) of total sales.
--   **Consistent Growth**: The business shows a strong and steady upward trend in both sales and profit from 2011 to 2014.
--   **High-Profit Products**: "Copiers" and "Phones" are key profit drivers, showing high profit margins relative to their sales volume.
--   **Low-Margin Category**: "Machines" generate significant sales but yield very low profits, suggesting an area for operational review.
+To use this dashboard and its custom themes, follow these steps:
 
----
-
-## 📂 Files in Repository
-
--   **Superstore_Sales_Dashboard.pbix** → The main Power BI dashboard file.
--   [cite_start]**Superstore_Sales.csv** → The dataset used for the analysis[cite: 12].
--   **Screenshot 2025-10-03 192647.png** → A screenshot of the final dashboard.
--   **README.md** → This project documentation file.
+1.  **Load Data:** Import the `Orders.csv`, `Returns.csv`, and `People.csv` files into your preferred BI tool (e.g., Power BI, Tableau).
+2.  **Establish Relationships:** Create a relationship between the `Orders` table and the `Returns` table using `Order ID` as the key.
+3.  **Build Visuals:** Recreate the charts and KPIs as shown in the dashboard images. The necessary formulas (Measures/Calculated Fields) are provided in the analysis.
+4.  **Apply Theme (Optional):** To apply the custom theme, follow the instructions in the "Dashboard Themes" section below.
 
 ---
 
-## 🚀 How to Use
+## 🎨 Dashboard Themes
 
-1.  Clone the repository:
-    ```bash
-    git clone [https://github.com/your-username/Superstore-Sales-Dashboard.git](https://github.com/your-username/Superstore-Sales-Dashboard.git)
-    ```
-2.  Open the `.pbix` file in Power BI Desktop.
-3.  Interact with the slicers and visuals to explore the data.
+This project includes custom JSON theme files to ensure a consistent and professional design. The recommended theme is the **High-Contrast Dark Mode**, which is modern, sleek, and easy on the eyes.
+
+### How to Use the Theme File:
+
+1.  **Download:** Download the `dark_theme.json` file from this repository.
+2.  **Import into Power BI:**
+    * Go to the **View** tab in the Power BI ribbon.
+    * Click the dropdown arrow in the **Themes** section.
+    * Select **Browse for themes**.
+    * Open the downloaded `dark_theme.json` file.
+3.  The theme will be automatically applied to your entire report.
 
 ---
-
-## 👤 Author
-
--   [Your Name]
